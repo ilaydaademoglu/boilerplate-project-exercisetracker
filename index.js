@@ -23,7 +23,7 @@ const listener = app.listen(process.env.PORT || 3000, () => {
 });
 
 
-mongoose.connect('mongodb+srv://ilaydadem:alfa164@cluster0.datnjrt.mongodb.net/userexercise?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://dbname:password@cluster0.datnjrt.mongodb.net/userexercise?retryWrites=true&w=majority');
 const database = mongoose.connection;
 
 database.on('error', (error) => {
